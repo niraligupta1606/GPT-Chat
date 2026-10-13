@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPT Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-top">
+                <h2>✦ GPT</h2>
+                <button id="closeSidebar" class="icon-btn"
+                    aria-label="Close sidebar">✕</button>
+            </div>
+
+            <button id="newChat" class="new-chat">
+                ＋ New Chat
+            </button>
+
+            <p class="section-title">YOUR CHATS</p>
+            <div id="history" class="history"></div>
+
+            <div class="sidebar-index.html script.js style.cssbottom">
+                <button id="themeBtn" class="menu-btn">
+                    ☾ Toggle Theme
+                </button>
+                <p>GPT Chat · Demo Version</p>
+            </div>
+        </aside>
+
+        <main class="main">
+            <header class="topbar">
+                <button id="menuBtn" class="icon-btn"
+                    aria-label="Open sidebar">☰</button>
+                <span>GPT Chat <span class="badge">Demo</span></span>
+                <button id="clearBtn" class="icon-btn"
+                    aria-label="Clear conversation"
+                    title="Clear conversation">⌫</button>
+            </header>
+
+            <section id="chat" class="chat">
+                <div id="welcome" class="welcome">
+                    <div class="logo">✦</div>
+                    <h1>What can I help with?</h1>
+                    <p>Ask a question, learn something new, or explore an idea.</p>
+
+                    <div class="suggestions">
+                        <button class="suggestion"
+                            data-prompt="Explain HTML in simple words">
+                            <b>💻 Learn coding</b>
+                            <span>Explain HTML simply</span>
+                        </button>
+
+                        <button class="suggestion"
+                            data-prompt="Give me a study plan for tomorrow">
+                            <b>📚 Study plan</b>
+                            <span>Organize my studies</span>
+                        </button>
+
+                        <button class="suggestion"
+                            data-prompt="Write a simple JavaScript program">
+                            <b>⚡ Write code</b>
+                            <span>Create a JavaScript program</span>
+                        </button>
+
+                        <button class="suggestion"
+                            data-prompt="Tell me an interesting science fact">
+                            <b>🌍 Explore</b>
+                            <span>Discover something interesting</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="messages" class="messages"></div>
+            </section>
+
+            <footer class="composer-area">
+                <form id="chatForm" class="composer">
+                    <textarea id="userInput" rows="1"
+                        placeholder="Message GPT..."
+                        aria-label="Write your message"></textarea>
+                    <button id="sendBtn" type="submit"
+                        aria-label="Send message">↑</button>
+                </form>
+
+                <p class="disclaimer">
+                    Demo chatbot · Replies are generated locally, not by a real AI model.
+                </p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
